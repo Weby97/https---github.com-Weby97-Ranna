@@ -1,0 +1,28 @@
+// // Redirect to the commands folder with files that end with .js
+// const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
+// for(const file of commandFiles){
+//     const command = require(`./commands/${file}`);
+
+//     client.commands.set(command.name, command)
+// }
+
+
+// // to start in the command prompt, do node .
+// // to end, do ctrl + c
+// client.once('ready', () =>{
+//     console.log('Ranna Bot is online!')
+// })
+
+// // Check the message
+// client.on('message', message =>{
+//     if(!message.content.startsWith(prefix) || message.author.bot) return;
+
+//     // Get rid of prefix
+//     const args = message.content.slice(prefix.length).split(/ +/);
+//     const command = args.shift().toLowerCase();
+
+//     // Time to make some commands!
+//     if(command === 'ping'){
+//         client.commands.get('ping').execute(message,args);
+//     }
+// });
